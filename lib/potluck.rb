@@ -9,4 +9,8 @@ class Potluck
   def add_dish(dish)
     dishes << dish
   end
+
+  def all_from_category(category)
+    dishes.select { |dish| dish.category == category }
+  end
 end
